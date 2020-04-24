@@ -16,8 +16,23 @@
         .h-100 {
             height: 500px !important;
         }
-    
-       
+
+        .subtitle {
+            color: orangered;
+        }
+
+        .thumb {
+            border-radius: 20px;
+            width: 18em;
+        }
+
+        @media screen and (min-width: 576px) {
+            .thumb{
+                margin-left: 1em;
+                width: 100%;
+                height: 80%;
+            }
+        }
 
     </style>
 </head>
@@ -52,13 +67,31 @@
         </nav>
     </header>
 
-   <div class="hero-image">
-       <div class="container-hero">
-           <h1><span>erick</span></h1>
-           <span class="des">terapia online // clases  // talleres</span>
-           <a href="#" class="boton">contacto</a>
-       </div>
-   </div>
+    <section class="hero-image">
+        <div class="container-hero">
+            <h1><span>erick</span></h1>
+            <span class="des">terapia online // clases // talleres</span>
+            <a href="#" class="boton">contacto</a>
+        </div>
+    </section>
+
+    <section class="container-fluid mt-sm-3">
+        <div class="row">
+            <div class="col-12 mt-4 text-center">
+                <div class="row">
+                    <div class="col-12 col-sm-6 d-sm-flex align-items-sm-center">
+                        <img src="images/positive.jpg" alt="Positivo" class="img-fluid thumb">
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <h3 class="mt-4 mb-3 subtitle">Aprende a vivir con armonía contigo mismo y con los demás</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corporis nobis optio earum aliquid repellendus totam quis fugiat sequi, praesentium deserunt quas ut veritatis, hic sint. Voluptatem, inventore delectus magni!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
 
 
 
