@@ -8,6 +8,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Fontaweson -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="style.css">
 
@@ -26,17 +28,26 @@
             width: 18em;
         }
 
+        .icon {
+            font-size: 4em;
+            color: white;
+            margin: auto;
+        }
+        
+        .activities{
+            background: orangered;
+            color: white;
+        }
+
         @media screen and (min-width: 576px) {
-            .thumb{
+            .thumb {
                 margin-left: 1em;
                 width: 100%;
                 height: 80%;
             }
         }
-        
-        @media screen and (min-width: 992px){
-            
-        }
+
+        @media screen and (min-width: 992px) {}
 
     </style>
 </head>
@@ -74,7 +85,7 @@
     <section class="hero-image">
         <div class="container-hero">
             <h1><span>erick</span></h1>
-            <span class="des">terapia online // clases // talleres</span>
+            <span class="des">terapia // clases // talleres</span>
             <a href="#" class="boton">contacto</a>
         </div>
     </section>
@@ -87,16 +98,35 @@
                         <img src="images/positive.jpg" alt="Positivo" class="img-fluid thumb">
                     </div>
                     <div class="col-12 col-sm-6 d-lg-flex align-items-lg-center">
-                       <div>
-                        <h3 class="mt-4 mb-3 subtitle">Aprende a vivir con armonía contigo mismo y con los demás</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corporis nobis optio earum aliquid repellendus totam quis fugiat sequi, praesentium deserunt quas ut veritatis, hic sint. Voluptatem, inventore delectus magni!</p>
+                        <div>
+                            <h3 class="mt-4 mb-3 subtitle">Aprende a vivir con armonía contigo mismo y con los demás</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corporis nobis optio earum aliquid repellendus totam quis fugiat sequi, praesentium deserunt quas ut veritatis, hic sint. Voluptatem, inventore delectus magni!</p>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
+    </section>
 
+    <section class="container-fluid mt-3 activities">
+        <div class="row">
+            <article class="col-12 d-flex flex-column mb-3">
+                <i class="fas fa-graduation-cap icon mb-2"></i>
+                <h4 class="text-center">Clases de apoyo</h4>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ad, pariatur neque, iure minus porro consectetur odit tempore dicta? Vitae hic officiis commodi autem, eius a perferendis impedit sit quisquam!</p>
+            </article>
+            <article class="col-12 d-flex flex-column my-3">
+                <i class="fas fa-user-edit icon mb-2"></i>
+                <h4 class="text-center">Test vocacional</h4>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ad, pariatur neque, iure minus porro consectetur odit tempore dicta? Vitae hic officiis commodi autem, eius a perferendis impedit sit quisquam!</p>
+            </article>
+            <article class="col-12 d-flex flex-column my-3">
+                <i class="fas fa-chalkboard-teacher icon mb-2"></i>
+                <h4 class="text-center">Cursos</h4>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ad, pariatur neque, iure minus porro consectetur odit tempore dicta? Vitae hic officiis commodi autem, eius a perferendis impedit sit quisquam!</p>
+            </article>
+        </div>
     </section>
 
 
