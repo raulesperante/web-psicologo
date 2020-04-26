@@ -33,11 +33,29 @@
             color: white;
             margin: auto;
         }
-        
-        .activities{
+
+        .activities {
             background: orangered;
             color: white;
         }
+
+        .display-sm-3 {
+            font-style: italic;
+        }
+
+        .talleres-img {
+            border-radius: 10px;
+            width: 80%;
+        }
+
+        #small-about {
+            display: block;
+        }
+
+        #lg-about {
+            display: none;
+        }
+
 
         @media screen and (min-width: 576px) {
             .thumb {
@@ -47,7 +65,34 @@
             }
         }
 
+        /* sm context */
         @media screen and (min-width: 768px) {
+            .display-sm-3 {
+                font-size: 3.5em;
+                font-style: italic;
+                padding-left: 30px;
+            }
+
+            #small-about {
+                display: none;
+            }
+
+
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            #psicologo {
+                width: 60%;
+            }
+
+            #h-about {
+                height: 30em;
+            }
+
+            #container-psico{
+                flex-basis: 40em;
+            }
             
         }
 
@@ -84,7 +129,7 @@
         </nav>
     </header>
 
-   <!-- Hero image -->
+    <!-- Hero image -->
     <section class="hero-image">
         <div class="container-hero">
             <h1><span>erick</span></h1>
@@ -131,6 +176,37 @@
                 <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ad, pariatur neque, iure minus porro consectetur odit tempore dicta? Vitae hic officiis commodi autem, eius a perferendis impedit sit quisquam!</p>
             </article>
         </div>
+    </section>
+
+    <!-- Talleres -->
+    <section class="mt-4">
+        <div class="row">
+            <h2 class="m-auto pb-4 subtitle text-center col-sm-4 display-sm-3">Mis talleres</h2>
+            <article class="col-12 d-flex flex-column col-sm-4">
+                <img src="images/grupo1.jpg" alt="Grupo de personas en un bar" class="img-fluid talleres-img m-auto">
+                <p class="mt-4 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum ullam neque ex eaque fugit earum eveniet, expedita laborum impedit velit magni laboriosam atque possimus quod labore quidem perspiciatis id.</p>
+            </article>
+            <article class="col-12 d-flex flex-column mt-4 col-sm-4 mt-sm-2">
+                <img src="images/grupo2.jpg" alt="Grupo de personas en un bar" class="img-fluid talleres-img m-auto order-sm-2">
+                <p class="mt-4 mx-4 text-center order-sm-1 mt-sm-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum ullam neque ex eaque fugit earum eveniet, expedita laborum impedit velit magni laboriosam atque possimus quod labore quidem perspiciatis id.</p>
+            </article>
+        </div>
+    </section><!-- Fin talleres -->
+
+    <!-- Sobre mí -->
+    <section id="h-about" class="row activities h-about">
+        <div id="small-about" class="col-12">
+            <h2 class="text-center my-3">Sobre mí</h2>
+        </div>
+        <div id="container-psico" class="col-12 d-flex mb-3 col-sm-6">
+            <img id="psicologo" src="images/psicologo.jpg" alt="Psicologo" class="img-fluid talleres-img m-auto mr-lg-2">
+        </div>
+        <div id="about-txt" class="col-12 col-sm-6 my-sm-5 d-lg-flex flex-lg-column pt-lg-5">
+            <h2 class="text-white text-center">Sobre mí</h2>
+            <p class="mx-4 text-justify px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ut cum alias ea id. Iste, fuga iusto! Facilis voluptatem est voluptatibus officiis nesciunt unde sint, reiciendis minus accusamus. Repellat molestiae natus doloremque reiciendis animi, consequatur sit eius soluta non aspernatur incidunt modi dolorum inventore necessitatibus ratione voluptas optio quae et quisquam ad odio cumque deleniti veritatis laudantium. Obcaecati quaerat tempore quos quidem sequi quam dicta cum, modi natus earum doloremque, molestiae aperiam explicabo. Numquam error, adipisci temporibus explicabo nulla porro. Laboriosam veritatis aliquid nisi temporibus libero, maxime ad animi qui quis minus omnis dicta labore culpa, corporis velit fugiat harum.</p>
+        </div>
+
+
     </section>
 
 
